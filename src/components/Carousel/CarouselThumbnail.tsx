@@ -35,7 +35,15 @@ const Thumbnail: FC<IThumbnail> = ({ id, url, isActive, onClickThumbnail }) => {
           }
         )}
       >
-        <img src={url} alt="thumbnail" className="w-full h-auto rounded-md" />
+        <picture>
+          <source media="(min-width:2560px)" srcSet={`assets/${url}.png`} />
+          <source media="(max-width:1920px)" srcSet={`assets/${url}-md.png`} />
+          <img
+            src={`assets/${url}-md.png`}
+            alt="thumnail"
+            className="w-full h-auto rounded-md"
+          />
+        </picture>
       </div>
     </div>
   );
@@ -61,8 +69,8 @@ const CarouselThumbnail: FC<ICarouselThumbnail> = ({
 
   console.log(activeThumbnail);
   return (
-    <div className="flex my-12 sm:mb-32 lg:my-12 z-20">
-      <section className="flex flex-row flex-wrap lg:flex-nowrap gap-0 lg:gap-4 xl:gap-12 w-full lg:max-w-[1200px] items-center lg:items-end h-[240px] justify-between z-10">
+    <div className="flex mt-12 lg:mt-24 lg:mb-12 z-20">
+      <section className="flex flex-row flex-wrap lg:flex-nowrap gap-0 lg:gap-4 xl:gap-12 w-full lg:max-w-[1200px] items-center lg:items-end justify-between z-10">
         {thumbnails.map((th) => (
           <Thumbnail
             key={th.id}

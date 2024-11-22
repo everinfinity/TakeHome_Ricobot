@@ -46,7 +46,6 @@ const Carousel: FC<ICarousel> = ({ imageData, children }) => {
 
   return (
     <div className="flex flex-col mt-[20vh] lg:my-[18vh] lg:px-24 lg:pt-24 p-8 relative bg-black">
-      <div className="absolute inset-0 bg-gradient-to-l from-[#252d3700] from-40% via-[#000000] via-72.92% to-[#09101A] to-100%  z-20" />
       <CarouselImage
         background={activeImage.background}
         foreground={activeImage.foreground}

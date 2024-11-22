@@ -1,34 +1,34 @@
 const slideData = [
   {
     id: "1",
-    background: "assets/1-background.png",
-    foreground: "assets/1-foreground-cutout.png",
-    thumbnail: "assets/1-thumbnail.png",
+    background: "1-background",
+    foreground: "1-foreground-cutout",
+    thumbnail: "1-thumbnail",
   },
   {
     id: "2",
-    background: "assets/2-background.png",
-    thumbnail: "assets/2-thumbnail.png",
+    background: "2-background",
+    thumbnail: "2-thumbnail",
   },
   {
     id: "3",
-    background: "assets/3-background.png",
-    thumbnail: "assets/3-thumbnail.png",
+    background: "3-background",
+    thumbnail: "3-thumbnail",
   },
   {
     id: "4",
-    background: "assets/4-background.png",
-    thumbnail: "assets/4-thumbnail.png",
+    background: "4-background",
+    thumbnail: "4-thumbnail",
   },
   {
     id: "5",
-    background: "assets/5-background.png",
-    thumbnail: "assets/5-thumbnail.png",
+    background: "5-background",
+    thumbnail: "5-thumbnail",
   },
   {
     id: "6",
-    background: "assets/6-background.png",
-    thumbnail: "assets/6-thumbnail.png",
+    background: "6-background",
+    thumbnail: "6-thumbnail",
   },
 ];
 
